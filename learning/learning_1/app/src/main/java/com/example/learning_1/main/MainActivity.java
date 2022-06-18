@@ -1,4 +1,4 @@
-package com.example.learning_1;
+package com.example.learning_1.main;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.learning_1.R;
 
 public class MainActivity extends AppCompatActivity {
     // 패키지 이름을 접두사로 사용하는것이 좋음, 상수가 다른 앱과 상호작용 시 겹치지 않음
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View view) {
         Toast.makeText(this, ((Button)view).getText(), Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText)findViewById(R.id.edittext_main);
+        EditText editText = (EditText)findViewById(R.id.et_main);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

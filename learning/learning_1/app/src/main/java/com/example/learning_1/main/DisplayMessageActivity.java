@@ -1,4 +1,4 @@
-package com.example.learning_1;
+package com.example.learning_1.main;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.learning_1.R;
 
 public class DisplayMessageActivity extends AppCompatActivity {
     static final int TEST_REC_CODE = 0;
@@ -21,7 +23,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-        TextView textView = (TextView) findViewById(R.id.textView_displayMessage);
+        TextView textView = (TextView) findViewById(R.id.tv_displayMessage);
         textView.setText(message);
     }
 

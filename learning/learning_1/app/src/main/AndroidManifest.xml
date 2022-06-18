@@ -9,11 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Learning_1">
-        <activity android:name=".IntentTestActivity"></activity>
+        <activity android:name=".layout_test.FrameLayoutTestActivity"></activity>
+        <activity android:name=".layout_test.RelativeLayoutTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fragment.FragmentTestActivity" />
+        <activity android:name=".main.IntentTestActivity" />
         <activity
-            android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:name=".main.DisplayMessageActivity"
+            android:parentActivityName=".main.MainActivity" />
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

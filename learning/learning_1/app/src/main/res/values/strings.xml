@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">learning_1</string>
+    <string name="main_send">Send</string>
+    <string name="relative_title">Title</string>
+    <string name="relative_prev">PREV</string>
+    <string name="relative_next">NEXT</string>
+    <string name="relative_close">CLOSE</string>
+    <string name="relative_save">SAVE</string>
+    <string name="relative_send">SEND</string>
+</resources>
