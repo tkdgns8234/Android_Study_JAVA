@@ -17,7 +17,6 @@
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintEnd_toStartOf="@+id/btn_main"
-        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +30,6 @@
         android:text="@string/main_send"
         app:layout_constraintBaseline_toBaselineOf="@+id/et_main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/et_main" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

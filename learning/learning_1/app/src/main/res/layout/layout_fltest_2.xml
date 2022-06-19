@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FF2"
+        android:background="#FF5432"
         android:text="TEST1"
         android:textStyle="bold"
         android:gravity="center"

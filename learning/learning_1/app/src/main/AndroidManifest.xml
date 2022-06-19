@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Learning_1">
-        <activity android:name=".layout_test.FrameLayoutTestActivity"></activity>
+        <activity android:name=".test.Test"></activity>
+        <activity android:name=".layout_test.FrameLayoutTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity android:name=".layout_test.RelativeLayoutTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
