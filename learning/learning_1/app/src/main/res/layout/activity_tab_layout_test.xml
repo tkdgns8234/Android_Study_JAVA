@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tab_layout.TabLayoutTestActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tabLayout_tlTest">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tlTest_tabA"
+            android:id="@+id/tab_tlTest_A"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/tlTest_tabB"
+            android:id="@+id/tab_tlTest_B"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_tlTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_tlTest_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F24FFF"
+            android:visibility="visible">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_tlTest_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#224FFF"
+            android:visibility="visible">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_tlTest_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F66F2F"
+            android:visibility="visible">
+        </ImageView>
+
+    </FrameLayout>
+
+</LinearLayout>

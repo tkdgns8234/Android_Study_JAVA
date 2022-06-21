@@ -9,7 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Learning_1">
-        <activity android:name=".test.Test"></activity>
+        <activity android:name=".recyclerview.RecyclerViewTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".listview.ListViewTestActivity" />
+        <activity android:name=".view_pager.ViewPagerTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tab_layout.TabLayoutTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".test.Test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity android:name=".layout_test.FrameLayoutTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

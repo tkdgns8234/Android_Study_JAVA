@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // layout xml 파일의 onClick 키워드를 활용한 callback 등록
-    // public으로 선언해야하기에 이 방식은 당연히 지양할거같다. (일단 연습이니 해보자)
+    // public으로 선언해야하기에 이 방식은 당연히 지양 (일단 연습이니 해보자)
     public void sendMessage(View view) {
         Toast.makeText(this, ((Button)view).getText(), Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, DisplayMessageActivity.class);
