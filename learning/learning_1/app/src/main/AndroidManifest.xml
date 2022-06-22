@@ -14,7 +14,12 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".listview.ListViewTestActivity" />
+        <activity android:name=".listview.ListViewTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".view_pager.ViewPagerTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
