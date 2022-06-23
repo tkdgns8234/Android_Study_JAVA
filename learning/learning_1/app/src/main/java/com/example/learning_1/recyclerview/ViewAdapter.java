@@ -28,8 +28,8 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.Holder> {
         }
     }
 
-    ViewAdapter(ArrayList<String> s) {
-        mString = s;
+    public ViewAdapter(ArrayList<String> mString) {
+        this.mString = mString;
     }
 
     @NonNull
