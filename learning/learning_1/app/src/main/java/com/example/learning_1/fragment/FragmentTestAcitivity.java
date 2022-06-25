@@ -69,7 +69,7 @@ public class FragmentTestAcitivity extends AppCompatActivity {
                         isInBackStack = true;
                     }
                 }
-                changeFragment(isInBackStack, mF1, FragmentTags[0]);
+                changeFragment(isInBackStack, mF1, FragmentTags[page]);
                 break;
             case 1:
                 if (mF2 == null) mF2 = new Fragment2();
@@ -79,7 +79,7 @@ public class FragmentTestAcitivity extends AppCompatActivity {
                         isInBackStack = true;
                     }
                 }
-                changeFragment(isInBackStack, mF2, FragmentTags[1]);
+                changeFragment(isInBackStack, mF2, FragmentTags[page]);
                 break;
             case 2:
                 if (mF3 == null) mF3 = new Fragment3();
@@ -89,39 +89,39 @@ public class FragmentTestAcitivity extends AppCompatActivity {
                         isInBackStack = true;
                     }
                 }
-                changeFragment(isInBackStack, mF3, FragmentTags[2]);
+                changeFragment(isInBackStack, mF3, FragmentTags[page]);
                 break;
         }
     }
 
     private void changeFragment(boolean isInBackStack, Fragment fragment, String tag) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         if (isInBackStack) {
             for (Fragment f : getSupportFragmentManager().getFragments()) {
-                transaction.hide(f);
+                ft.hide(f);
             }
-            transaction.show(fragment);
+            ft.show(fragment);
         }
         else {
-            transaction.add(R.id.frameLayout, fragment, tag);
-            transaction.addToBackStack(tag);
+            ft.add(R.id.frameLayout, fragment, tag);
+            ft.addToBackStack(tag);
         }
-        transaction.commit();
+        ft.commit();
     }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        FragmentManager mgr = getSupportFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
         
-        int backStackCnt = mgr.getBackStackEntryCount();
+        int backStackCnt = fm.getBackStackEntryCount();
         if (keyCode == KeyEvent.KEYCODE_BACK && backStackCnt > 1) {
             // 다음 fragment를 tag 값으로 찾은 후 show() 한다.
-            String tag = mgr.getBackStackEntryAt(backStackCnt - 2).getName();
-            Fragment fr = mgr.findFragmentByTag(tag);
-            mgr.beginTransaction().show(fr).commit();
+            String tag = fm.getBackStackEntryAt(backStackCnt - 2).getName();
+            Fragment fr = fm.findFragmentByTag(tag);
+            fm.beginTransaction().show(fr).commit();
 
-            // 현재 프래그먼트의 백스택 맨 위에있는 프래그먼트 pop
-            mgr.popBackStack();
+            // 현재 프래그먼트 백스택의 맨 위에있는 프래그먼트를 pop 한다.
+            fm.popBackStack();
             return true;
         }
 

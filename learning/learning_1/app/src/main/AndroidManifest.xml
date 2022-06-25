@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.learning_1" >
+    package="com.example.learning_1">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,56 +11,72 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Learning_1"
-        android:usesCleartextTraffic="true" >
-        <activity android:name=".thread_handler.ThreadTestActivity" >
+        android:usesCleartextTraffic="true">
+        <activity android:name=".selector.SelectorTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".firebase.fcm.FcmTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".fragment.FragmentTestAcitivity" >
+        <service android:name=".firebase.fcm.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".thread_handler.ThreadTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".navigationmenu.NavigationMenuActivity" >
+        <activity android:name=".fragment.FragmentTestAcitivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".webview.WebViewTestActivity" >
+        <activity android:name=".navigationmenu.NavigationMenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".webview.WebViewTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".recyclerview.RecyclerViewTestActivity" >
+        <activity android:name=".recyclerview.RecyclerViewTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".listview.ListViewTestActivity" >
+        <activity android:name=".listview.ListViewTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".view_pager.ViewPagerTestActivity" >
+        <activity android:name=".view_pager.ViewPagerTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".tab_layout.TabLayoutTestActivity" >
+        <activity android:name=".tab_layout.TabLayoutTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".layout_test.FrameLayoutTestActivity" >
+        <activity android:name=".layout_test.FrameLayoutTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".layout_test.RelativeLayoutTestActivity" >
+        <activity android:name=".layout_test.RelativeLayoutTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -69,7 +85,7 @@
         <activity
             android:name=".main.DisplayMessageActivity"
             android:parentActivityName=".main.MainActivity" />
-        <activity android:name=".main.MainActivity" >
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

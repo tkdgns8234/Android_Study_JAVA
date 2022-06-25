@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1038266952294",
+    "project_id": "test-hoon-d16b0",
+    "storage_bucket": "test-hoon-d16b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038266952294:android:1c50afe695e60ab2971ba7",
+        "android_client_info": {
+          "package_name": "com.example.learning_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038266952294-rtueo8nijess1m71r0rknq1ifu2rfcef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa_djJz_RkiNtYecAEMRXooZlmBQ_1z2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038266952294-rtueo8nijess1m71r0rknq1ifu2rfcef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
