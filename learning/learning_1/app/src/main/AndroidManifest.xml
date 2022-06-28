@@ -12,11 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Learning_1"
         android:usesCleartextTraffic="true">
+
+        <activity android:name=".firebase.db.FireBaseDBTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".selector.SelectorTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+
         <activity android:name=".firebase.fcm.FcmTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1038266952294",
-    "project_id": "test-hoon-d16b0",
-    "storage_bucket": "test-hoon-d16b0.appspot.com"
+    "project_number": "427854749575",
+    "project_id": "learning-1-d8735",
+    "storage_bucket": "learning-1-d8735.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1038266952294:android:1c50afe695e60ab2971ba7",
+        "mobilesdk_app_id": "1:427854749575:android:9511ac406af63bddfd7d22",
         "android_client_info": {
           "package_name": "com.example.learning_1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1038266952294-rtueo8nijess1m71r0rknq1ifu2rfcef.apps.googleusercontent.com",
+          "client_id": "427854749575-qqcc0rticv98pe0bpqcd6jt89t9i4nko.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAa_djJz_RkiNtYecAEMRXooZlmBQ_1z2M"
+          "current_key": "AIzaSyAJnsQLqWGNs74G5NbTt0v48gt8vuoJy6Q"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1038266952294-rtueo8nijess1m71r0rknq1ifu2rfcef.apps.googleusercontent.com",
+              "client_id": "427854749575-qqcc0rticv98pe0bpqcd6jt89t9i4nko.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
